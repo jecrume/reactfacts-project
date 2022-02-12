@@ -3,19 +3,21 @@ import "./page.css";
 
 function Page() {
     return (
-      <div>
-        <img src={logo} alt="" />
-        
+      <div className="page-container">
+        <div className="img">
+          <img src={logo} alt="" />
+        </div>
         <h1>
           <b> Fun facts about React </b>
         </h1>
-        
-        <ol>
-          <li>It's composable</li>
-          <li>It's declarative</li>
-          <li>It's a hireable skill</li>
-          <li>It's actively maintained by skilled people</li>
-        </ol>
+
+        <ul>
+          <li>Was first released in 2013</li>
+          <li>Was originally created by Jordan Wilke</li>
+          <li>has well over 100K stars on Github</li>
+          <li>Is maintained by Facebook</li>
+          <li>Powers thousands of enterprise apps, including mobile apps</li>
+        </ul>
       </div>
     );
 }
